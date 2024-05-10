@@ -1,3 +1,5 @@
+# Neel Nadkarni and Nathan Stalley
+
 from match import match
 from a8_part_II import *
 from typing import List, Tuple, Callable, Any
@@ -7,6 +9,7 @@ def bye_action(dummy: List[str]) -> None:
     raise KeyboardInterrupt
 
 pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
+    # Patterns MUST end in "of %"
     (str.split("birthday of %"), get_birth_date),
     (str.split("polar radius of %"), get_planet_radius),
     (str.split("bye"), bye_action),
