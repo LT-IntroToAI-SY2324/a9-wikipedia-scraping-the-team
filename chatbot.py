@@ -58,7 +58,7 @@ def run() -> None:
                 while(True):
                     os.system("clear")
                     print(answers)
-                    option = input("\x1b[31m Which one? (Copy and Paste)\n\n \x1b[37m")
+                    option = input("\x1b[31mWhich one? (Copy and Paste)\n\n\x1b[37m")
                     print("\n")
                     try:
                         first_half = extract_before_index(query.split(), query.split().index("of"))
